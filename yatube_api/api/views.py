@@ -1,12 +1,17 @@
 from django.shortcuts import get_object_or_404
 
-from rest_framework import viewsets, filters, mixins, pagination
+from rest_framework import viewsets, filters, pagination
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import PermissionDenied
 
 from posts.models import Group, Post
-from .serializers import PostSerializer, GroupSerializer, CommentSerializer, FollowSerializer
+from .serializers import (
+    PostSerializer,
+    GroupSerializer,
+    CommentSerializer,
+    FollowSerializer
+)
 from .permissions import IsUserOrReadOnly
 
 
@@ -57,6 +62,7 @@ class CommentViewSet(viewsets.ModelViewSet):
         if instance.author != self.request.user:
             raise PermissionDenied('Изменение чужого контента запрещено!')
         instance.delete()
+
 
 class FollowViewSet(viewsets.ModelViewSet):
     serializer_class = FollowSerializer
