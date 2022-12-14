@@ -7,33 +7,39 @@
 Клонировать репозиторий и перейти в него в командной строке:
 
 HTTPS ключ:
-git https://github.com/nikitaloskutov18/api_final_yatube.git
+`git https://github.com/nikitaloskutov18/api_final_yatube.git`
 
 SSH ключ:
-git@github.com:nikitaloskutov18/api_final_yatube.git
+`git@github.com:nikitaloskutov18/api_final_yatube.git`
 
 Перети в проект
 
-cd api_final_yatube
+`cd api_final_yatube`
 
 Cоздать и активировать виртуальное окружение:
 
-python3 -m venv venv(MacOS)
-python -m venv venv(Windows)
-source venv/bin/activate
+`python3 -m venv venv(MacOS)`
+
+`python -m venv venv(Windows)`
+
+`source venv/bin/activate`
 
 Установить зависимости из файла requirements.txt:
 
-python3 -m pip install --upgrade pip(MacOS)
-python -m pip install --upgrade pip(Windows)
-pip install -r requirements.txt
+`python3 -m pip install --upgrade pip(MacOS)`
+
+`python -m pip install --upgrade pip(Windows)`
+
+`pip install -r requirements.txt`
 
 Выполнить миграции:
 
-python3 manage.py migrate(MacOS)
-python manage.py migrate(Windows)
+`python3 manage.py migrate(MacOS)`
+
+`python manage.py migrate(Windows)`
 
 Запустить проект:
 
-python3 manage.py runserver(MacOS)
-python manage.py runserver(Windows)
+`python3 manage.py runserver(MacOS)`
+
+`python manage.py runserver(Windows)`
