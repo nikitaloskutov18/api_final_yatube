@@ -6,7 +6,13 @@
 Как запустить проект:
 Клонировать репозиторий и перейти в него в командной строке:
 
-git clone https://github.com/VadimVolkovsky/api_final_yatube.git
+HTTPS ключ:
+git https://github.com/nikitaloskutov18/api_final_yatube.git
+
+SSH ключ:
+git@github.com:nikitaloskutov18/api_final_yatube.git
+Перети в проект
+
 cd api_final_yatube
 Cоздать и активировать виртуальное окружение:
 
